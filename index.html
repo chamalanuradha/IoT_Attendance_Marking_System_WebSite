@@ -21,7 +21,6 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="form.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -43,11 +42,12 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-    
+      <button onclick="document.getElementById('id01').style.display='block'" id="Login-Button" style="width:auto;">Login</button>
+      <button  id="Email" style="width:auto;display:none"></button>
+
       <div id="id01" class="modal">
         
-        <form class="modal-content animate" action="/action_page.php" method="post">
+        <form class="modal-content animate"  method="post">
           <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             <img src="assets/img/favicon.png" alt="Avatar" class="avatar">
@@ -62,13 +62,8 @@
             <label>
               <input type="checkbox" checked="checked" name="remember"> Remember me
             </label> 
-          </br>
             <button type="submit">Login</button>
             
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
         </form>
       </div>
@@ -291,14 +286,14 @@
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="trainers.html">Teachers</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="trainers.html">Teachers</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy policy</a></li>
+              </ul>
           </div>
         </div>
       </div>
@@ -330,16 +325,15 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/controll.js" type="module"></script>
+  
 </body>
 
 </html>
